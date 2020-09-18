@@ -4,6 +4,31 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+//#4: React Elemets
+function DisplayEmpInfo(employee) {
+  return (<div>
+    <p><label>Employee ID: <b>{employee.id}</b></label> </p>
+    <p> <label>Employee Name: <b>{employee.name}</b> </label> </p>
+    <p> <label> Employee Location: <b>{employee.location}</b></label></p>
+    <p><label>Employee Salary: <b>{employee.salary}</b></label></p>
+    <br></br>
+    <DeptInfo deptname={employee.deptname} depthead={employee.depthead}></DeptInfo>
+  </div>
+  );
+}
+const DeptInfo = (dept) => {
+  return <div>
+    <p>Dept Name:<b>{dept.deptname}</b></p>
+    <p>Dept Head:<b>{dept.depthead}</b></p>
+  </div>
+}
+const empElement = (<DisplayEmpInfo id="1" name="codebaseline" location="Pune" salary="34570"
+  deptname="Computers" depthead="Alex">
+
+</DisplayEmpInfo>
+);
+ReactDOM.render(empElement, document.getElementById("root"));
+
 //React Element 1
 
 //const element1 = <h1>Welcome To codebaseline tutorials..</h1>;
@@ -21,13 +46,13 @@ import * as serviceWorker from "./serviceWorker";
 // ReactDOM.render(element3, document.getElementById("root"));
 
 //React Element 2
-const reactElement = React.createElement(
-  "div",
-  null,
-  React.createElement("h1", null, "This elements is created by react."),
-  React.createElement("h1", null, "Second Div.")
-);
-ReactDOM.render(reactElement, document.getElementById("root"));
+// const reactElement = React.createElement(
+//   "div",
+//   null,
+//   React.createElement("h1", null, "This elements is created by react."),
+//   React.createElement("h1", null, "Second Div.")
+// );
+// ReactDOM.render(reactElement, document.getElementById("root"));
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -40,3 +65,4 @@ ReactDOM.render(reactElement, document.getElementById("root"));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
