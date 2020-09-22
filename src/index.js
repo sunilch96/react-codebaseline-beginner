@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-//#5 Class Components
-export class DisplayEmpInfo extends Component {
+
+//#5: React Class Coponents
+class DisplayEmpInfo extends Component {
   constructor(props) {
-    super(this.props)
-    console.log(this.props);
+    super(props)
   }
   render() {
-    return <div>
+    return (<div>
       <p><label>Employee ID: <b>{this.props.id}</b></label> </p>
       <p> <label>Employee Name: <b>{this.props.name}</b> </label> </p>
       <p> <label> Employee Location: <b>{this.props.location}</b></label></p>
@@ -18,9 +18,10 @@ export class DisplayEmpInfo extends Component {
       <br></br>
       <DeptInfo deptname={this.props.deptname} depthead={this.props.depthead}></DeptInfo>
     </div>
-  };
+    );
+  }
 }
-export class DeptInfo extends Component {
+class DeptInfo extends Component {
   render() {
     return <div>
       <p>Dept Name:<b>{this.props.deptname}</b></p>
@@ -29,9 +30,12 @@ export class DeptInfo extends Component {
   }
 }
 const empElement = (<DisplayEmpInfo id="1" name="codebaseline" location="Pune" salary="34570"
-  deptname="Computers" depthead="Alex"></DisplayEmpInfo>
+  deptname="Computers" depthead="Alex">
+
+</DisplayEmpInfo>
 );
 ReactDOM.render(empElement, document.getElementById("root"));
+//end #5
 
 
 //#4: React Elemets
