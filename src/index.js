@@ -4,37 +4,80 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-//#5: React Class Coponents
-class DisplayEmpInfo extends Component {
-  constructor(props) {
-    super(props)
+//#6.1 React States
+class MessageLength extends Component {
+  constructor() {
+    super()
+    this.state = { message: 'aa' }
   }
-  render() {
-    return (<div>
-      <p><label>Employee ID: <b>{this.props.id}</b></label> </p>
-      <p> <label>Employee Name: <b>{this.props.name}</b> </label> </p>
-      <p> <label> Employee Location: <b>{this.props.location}</b></label></p>
-      <p><label>Employee Salary: <b>{this.props.salary}</b></label></p>
-      <br></br>
-      <DeptInfo deptname={this.props.deptname} depthead={this.props.depthead}></DeptInfo>
-    </div>
-    );
+  onMessageChange(text) {
+    this.setState({ message: "Msg length is: " + text.length })
   }
-}
-class DeptInfo extends Component {
   render() {
     return <div>
-      <p>Dept Name:<b>{this.props.deptname}</b></p>
-      <p>Dept Head:<b>{this.props.depthead}</b></p>
+      <p>Enter Message: <input type="text" onChange={e => this.onMessageChange(e.target.value)}></input></p>
+      <p><label>{this.state.message}</label></p>
     </div>
   }
 }
-const empElement = (<DisplayEmpInfo id="1" name="codebaseline" location="Pune" salary="34570"
-  deptname="Computers" depthead="Alex">
+//const element = <MessageLength />
+//ReactDOM.render(element, document.getElementById("root"));
 
-</DisplayEmpInfo>
-);
-ReactDOM.render(empElement, document.getElementById("root"));
+class Student extends Component {
+  //counter = 0;
+  state = { counter: 0 }
+  addStudent = () => {
+    //this.counter = this.counter + 1;
+    //alert("Button Clicked Times: " + this.counter);
+
+    this.setState({ counter: this.state.counter + 1 });
+  }
+  render() {
+    return <div>
+      <h2>Welcome to Student Component...</h2>
+      <p>
+        <button onClick={this.addStudent}>Add Student</button>
+      </p>
+      {/* <p>button Clicked <b>{this.counter}</b> :times</p> */}
+      <p>button Clicked <b>{this.state.counter}</b> :times</p>
+    </div>
+  }
+}
+const element = <Student />
+ReactDOM.render(element, document.getElementById("root"));
+//#6 End
+
+//#5: React Class Coponents
+// class DisplayEmpInfo extends Component {
+//   constructor(props) {
+//     super(props)
+//   }
+//   render() {
+//     return (<div>
+//       <p><label>Employee ID: <b>{this.props.id}</b></label> </p>
+//       <p> <label>Employee Name: <b>{this.props.name}</b> </label> </p>
+//       <p> <label> Employee Location: <b>{this.props.location}</b></label></p>
+//       <p><label>Employee Salary: <b>{this.props.salary}</b></label></p>
+//       <br></br>
+//       <DeptInfo deptname={this.props.deptname} depthead={this.props.depthead}></DeptInfo>
+//     </div>
+//     );
+//   }
+// }
+// class DeptInfo extends Component {
+//   render() {
+//     return <div>
+//       <p>Dept Name:<b>{this.props.deptname}</b></p>
+//       <p>Dept Head:<b>{this.props.depthead}</b></p>
+//     </div>
+//   }
+// }
+// const empElement = (<DisplayEmpInfo id="1" name="codebaseline" location="Pune" salary="34570"
+//   deptname="Computers" depthead="Alex">
+
+// </DisplayEmpInfo>
+// );
+// ReactDOM.render(empElement, document.getElementById("root"));
 //end #5
 
 
