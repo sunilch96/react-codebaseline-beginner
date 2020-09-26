@@ -4,12 +4,18 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Employee from "./components/session7/Employee";
+import App8 from "./components/session8/App8";
+
+//8
+
+const element_8 = <App8></App8>
+ReactDOM.render(element_8, document.getElementById("root"));
 
 //7 Interaction between react components
-const element_7 = <Employee Id="101" Name="Sunil"
-  Location="Pune" Salary="50000" BasicSalary="25000"
-  HRA="10000" SpecialAllowance="15000"></Employee>
-ReactDOM.render(element_7, document.getElementById("root"));
+// const element_7 = <Employee Id="101" Name="Sunil"
+//   Location="Pune" Salary="50000" BasicSalary="25000"
+//   HRA="10000" SpecialAllowance="15000"></Employee>
+// ReactDOM.render(element_7, document.getElementById("root"));
 
 
 //#6.1 React States
