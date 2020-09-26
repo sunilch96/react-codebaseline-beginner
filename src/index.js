@@ -3,48 +3,56 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import Employee from "./components/session7/Employee";
+
+//7 Interaction between react components
+const element_7 = <Employee Id="101" Name="Sunil"
+  Location="Pune" Salary="50000" BasicSalary="25000"
+  HRA="10000" SpecialAllowance="15000"></Employee>
+ReactDOM.render(element_7, document.getElementById("root"));
+
 
 //#6.1 React States
-class MessageLength extends Component {
-  constructor() {
-    super()
-    this.state = { message: 'aa' }
-  }
-  onMessageChange(text) {
-    this.setState({ message: "Msg length is: " + text.length })
-  }
-  render() {
-    return <div>
-      <p>Enter Message: <input type="text" onChange={e => this.onMessageChange(e.target.value)}></input></p>
-      <p><label>{this.state.message}</label></p>
-    </div>
-  }
-}
-//const element = <MessageLength />
-//ReactDOM.render(element, document.getElementById("root"));
+// class MessageLength extends Component {
+//   constructor() {
+//     super()
+//     this.state = { message: 'aa' }
+//   }
+//   onMessageChange(text) {
+//     this.setState({ message: "Msg length is: " + text.length })
+//   }
+//   render() {
+//     return <div>
+//       <p>Enter Message: <input type="text" onChange={e => this.onMessageChange(e.target.value)}></input></p>
+//       <p><label>{this.state.message}</label></p>
+//     </div>
+//   }
+// }
+// //const element = <MessageLength />
+// //ReactDOM.render(element, document.getElementById("root"));
 
-class Student extends Component {
-  //counter = 0;
-  state = { counter: 0 }
-  addStudent = () => {
-    //this.counter = this.counter + 1;
-    //alert("Button Clicked Times: " + this.counter);
+// class Student extends Component {
+//   //counter = 0;
+//   state = { counter: 0 }
+//   addStudent = () => {
+//     //this.counter = this.counter + 1;
+//     //alert("Button Clicked Times: " + this.counter);
 
-    this.setState({ counter: this.state.counter + 1 });
-  }
-  render() {
-    return <div>
-      <h2>Welcome to Student Component...</h2>
-      <p>
-        <button onClick={this.addStudent}>Add Student</button>
-      </p>
-      {/* <p>button Clicked <b>{this.counter}</b> :times</p> */}
-      <p>button Clicked <b>{this.state.counter}</b> :times</p>
-    </div>
-  }
-}
-const element = <Student />
-ReactDOM.render(element, document.getElementById("root"));
+//     this.setState({ counter: this.state.counter + 1 });
+//   }
+//   render() {
+//     return <div>
+//       <h2>Welcome to Student Component...</h2>
+//       <p>
+//         <button onClick={this.addStudent}>Add Student</button>
+//       </p>
+//       {/* <p>button Clicked <b>{this.counter}</b> :times</p> */}
+//       <p>button Clicked <b>{this.state.counter}</b> :times</p>
+//     </div>
+//   }
+// }
+// const element = <Student />
+// ReactDOM.render(element, document.getElementById("root"));
 //#6 End
 
 //#5: React Class Coponents
@@ -129,7 +137,7 @@ ReactDOM.render(element, document.getElementById("root"));
 //   "div",
 //   null,
 //   React.createElement("h1", null, "This elements is created by react."),
-//   React.createElement("h1", null, "Second Div.")
+//   React.createElement("h2", null, "Second Div.")
 // );
 // ReactDOM.render(reactElement, document.getElementById("root"));
 
