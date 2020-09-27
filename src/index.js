@@ -5,11 +5,16 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Employee from "./components/session7/Employee";
 import App8 from "./components/session8/App8";
+import App9 from "./components/session9/App9";
 
-//8
+//9: Interaction with react components
+const element_9 = <App9></App9>
+ReactDOM.render(element_9, document.getElementById("root"));
 
-const element_8 = <App8></App8>
-ReactDOM.render(element_8, document.getElementById("root"));
+
+//8 React Component communication using context
+// const element_8 = <App8></App8>
+// ReactDOM.render(element_8, document.getElementById("root"));
 
 //7 Interaction between react components
 // const element_7 = <Employee Id="101" Name="Sunil"
