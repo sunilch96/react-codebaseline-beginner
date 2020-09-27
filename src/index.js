@@ -6,10 +6,15 @@ import * as serviceWorker from "./serviceWorker";
 import Employee from "./components/session7/Employee";
 import App8 from "./components/session8/App8";
 import App9 from "./components/session9/App9";
+import App10 from "./components/session10/App10";
+
+const element_10 = <App10></App10>
+ReactDOM.render(element_10, document.getElementById("root"));
+
 
 //9: Interaction with react components
-const element_9 = <App9></App9>
-ReactDOM.render(element_9, document.getElementById("root"));
+// const element_9 = <App9></App9>
+// ReactDOM.render(element_9, document.getElementById("root"));
 
 
 //8 React Component communication using context
