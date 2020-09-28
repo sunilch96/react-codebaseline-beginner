@@ -193,8 +193,6 @@ C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
-C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cache
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cs
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
@@ -218,3 +216,11 @@ C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.dll
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Tutorials\GITHUB\CodeBaseLine\react-codebaseline-beginner\Server Side\RestApp\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache

@@ -8,11 +8,15 @@ import App8 from "./components/session8/App8";
 import App9 from "./components/session9/App9";
 import App10 from "./components/session10/App10";
 import Employee_11 from "./components/session11/Employee_11";
+import Employee_12 from "./components/session12/Employee_12";
 
+//12: Posting data from React to Rest API
+const element_12 = <Employee_12></Employee_12>
+ReactDOM.render(element_12, document.getElementById("root"));
 
 //11: How to make REST API Calls from React App
-const element_11 = <Employee_11></Employee_11>
-ReactDOM.render(element_11, document.getElementById("root"));
+//const element_11 = <Employee_11></Employee_11>
+//ReactDOM.render(element_11, document.getElementById("root"));
 
 //10: Iterating through list in react
 //const element_10 = <App10></App10>
