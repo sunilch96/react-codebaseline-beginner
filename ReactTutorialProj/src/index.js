@@ -9,10 +9,22 @@ import App9 from "./components/session9/App9";
 import App10 from "./components/session10/App10";
 import Employee_11 from "./components/session11/Employee_11";
 import Employee_12 from "./components/session12/Employee_12";
+import Employee_13 from "./components/session13/Employee_13";
+import Employee_13_formik from "./components/session13/Employee_13_formik";
+
+//13: Building Forms in React 
+//Part 2
+const element_13_formik = <Employee_13_formik></Employee_13_formik>
+ReactDOM.render(element_13_formik, document.getElementById("root"));
+
+//Part1
+//const element_13 = <Employee_13></Employee_13>
+//ReactDOM.render(element_13, document.getElementById("root"));
+//end 13
 
 //12: Posting data from React to Rest API
-const element_12 = <Employee_12></Employee_12>
-ReactDOM.render(element_12, document.getElementById("root"));
+//const element_12 = <Employee_12></Employee_12>
+//ReactDOM.render(element_12, document.getElementById("root"));
 
 //11: How to make REST API Calls from React App
 //const element_11 = <Employee_11></Employee_11>
