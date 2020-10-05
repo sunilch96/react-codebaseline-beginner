@@ -11,11 +11,23 @@ import Employee_11 from "./components/session11/Employee_11";
 import Employee_12 from "./components/session12/Employee_12";
 import Employee_13 from "./components/session13/Employee_13";
 import Employee_13_formik from "./components/session13/Employee_13_formik";
+import Employee_14 from "./components/session14/Employee_14";
+import Employee_14_yup from "./components/session14/Employee_14_yup";
+
+//14: How to validate Forms Data
+//Part 2
+const element_14_yup = <Employee_14_yup />
+ReactDOM.render(element_14_yup, document.getElementById("root"))
+
+//Part1
+// const element_14 = <Employee_14 />
+// ReactDOM.render(element_14, document.getElementById("root"))
+
 
 //13: Building Forms in React 
 //Part 2
-const element_13_formik = <Employee_13_formik></Employee_13_formik>
-ReactDOM.render(element_13_formik, document.getElementById("root"));
+//const element_13_formik = <Employee_13_formik></Employee_13_formik>
+//ReactDOM.render(element_13_formik, document.getElementById("root"));
 
 //Part1
 //const element_13 = <Employee_13></Employee_13>
@@ -163,6 +175,8 @@ ReactDOM.render(element_13_formik, document.getElementById("root"));
 //const element1 = <h1>A simple header text</h1>;
 //ReactDOM.render(element2, document.getElementById("root2"));
 
+
+
 // const element3 = (
 //   <div>
 //     <h1>Welcome To codebaseline tutorials..</h1>
@@ -173,10 +187,10 @@ ReactDOM.render(element_13_formik, document.getElementById("root"));
 
 //React Element 2
 // const reactElement = React.createElement(
-//   "div",
-//   null,
-//   React.createElement("h1", null, "This elements is created by react."),
-//   React.createElement("h2", null, "Second Div.")
+//       "div",
+//       null,
+//       React.createElement("h1", null, "This elements is created by react. 12345"),
+//       React.createElement("h2", null, "Second Div.")
 // );
 // ReactDOM.render(reactElement, document.getElementById("root"));
 
